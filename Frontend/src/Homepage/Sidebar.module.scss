@@ -1,25 +1,39 @@
 .sidebar {
-    width: 5%;
-    background-color: #23297A;
+    width: 250px; /* Fixed width looks better than % for sidebars usually */
+    min-width: 200px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    height: 100vh; /* Full height */
+    position: sticky;
+    top: 0;
 
     display: flex;
     flex-direction: column;
-    row-gap: 0.5rem;
-    padding: 0rem 1rem;
+    row-gap: 1rem;
+    padding: 1.5rem;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
 
 .logo {
-    margin: auto;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--secondary-color); /* Pop of color */
 }
 
-.explore_button {
-    margin: auto;
-}
-
-.notification_button {
-    margin: auto;
-}
-
+/* Common style for menu items */
+.explore_button,
+.notification_button,
 .settings_button {
-    margin: auto;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    font-weight: 500;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }

@@ -1,10 +1,13 @@
+.header_div {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color: var(--primary-color);
+}
+
 .recipes_div {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.header_div {
-    font-size: 24pt;
-    font-weight: bold;
+    gap: 1.5rem;
 }

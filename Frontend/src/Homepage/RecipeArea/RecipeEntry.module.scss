@@ -1,9 +1,23 @@
-.div {
-    width: 10rem; // Should be scaled based on container size and number of columns
-    height: 8rem;
-    background-color: rgb(128, 255, 198);
+.card {
+    width: 200px;
+    height: 150px;
+    background-color: var(--recipe-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    font-weight: 600;
+    color: var(--primary-color);
+    border: 1px solid transparent;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: rgba(0, 216, 255, 0.3);
+    }
 }

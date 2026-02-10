@@ -5,7 +5,7 @@ function RecipeEntry({
 }) {
   return (
     <>
-      <div className={style.div}>
+      <div className={style.card}>
         <span>Recipe {name}</span>
       </div>
     </>

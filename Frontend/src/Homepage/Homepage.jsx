@@ -5,19 +5,15 @@ import RecipeArea from './RecipeArea/RecipeArea.jsx'
 
 function Homepage() {
   return (
-    <> 
-    <div className={style.title_div}>
-        <TitleBar />
-    </div>
-
-    <div className={style.sidebar_div}>
+    <div className={style.homepage_container}>
         <Sidebar />
+        <div className={style.main_content}>
+            <TitleBar />
+            <div className={style.recipes_wrapper}>
+                <RecipeArea />
+            </div>
+        </div>
     </div>
-
-      <div className={style.recipes_div}>
-        <RecipeArea />
-      </div>
-    </>
   );
 }
 
