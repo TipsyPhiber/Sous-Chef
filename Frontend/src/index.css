@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #23297A;
+  --recipe-card-bg: rgb(128, 255, 198);
+}
+
+/* Example of a new color scheme (Light Theme) */
+/*
+.light-theme {
+  --primary-color: #4a90e2;
+  --recipe-card-bg: #f0f0f0;
+}
+*/
+
 html, body {
     margin: 0;
     padding: 0;
